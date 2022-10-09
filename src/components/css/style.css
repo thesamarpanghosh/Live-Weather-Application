@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+}
+
+body {
+    background: #f3f2ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Jost", sans-serif;
+}
+
+html {
+    font-size: 100%;
+    height: 100%;
+}
+
+html {
+    background: #eee;
+}
+
+.box {
+    width: 25vw;
+    height: 60vh;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 3rem rgba(238, 239, 176, 0.2);
+    background: #a5bbdd;
+    position: relative;
+    overflow: hidden;
+    min-width: 20rem;
+    min-height: 35rem;
+}
+
+
+/* .box::after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+} */
+
+.info {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    z-index: 4;
+}
+
+.location {
+    margin-top: -5.5rem;
+    text-align: center;
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+
+.temp {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.tempmin_max {
+    text-align: center;
+    margin-top: 0.3rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #57606f;
+}
+
+
+@media (max-width: 600px) {
+    .box {
+        width: 90vw;
+        height: 80vh;
+    }
+
+    .info {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 500px) {
+    .box {
+        height: 80vh;
+    }
+    .info {
+        font-size: 1.0rem;
+    }
+
+}
+
+.inputField {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    padding: 1rem 1rem;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.errorMsg {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem auto;
+}

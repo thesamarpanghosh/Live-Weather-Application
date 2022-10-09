@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+}
+html {
+    font-size: 100%;
+    height: 100%;
+    background: #eee;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+}
+.box {
+    width: 300px;
+    height: 450px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+    background: #cce5fd;
+    position: relative;
+    overflow: hidden;
+    /* min-width: 20rem;
+    min-height: 35rem; */
+}
+.info {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 22rem;
+    z-index: 4;
+}
+.location {
+    margin-top: 0.5rem;
+    text-align: center;
+    /* font-weight: 800; */
+    font-size: 3rem;
+}
+.temp {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.tempmin_max {
+    text-align: center;
+    margin-top: 0.3rem;
+    font-size: 1.0rem;
+    color: #57606f;
+}
+.humid {
+    text-align: center;
+    margin-top: 0.3rem;
+    font-size: 1.0rem;
+}
+.weatArr{
+    margin-top: 0.3rem;
+    font-size: 1.2rem;
+}
+.inputField {
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0.2rem 0.2rem;
+    outline: none;
+    font-size: 1rem;
+}
+.errorMsg {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem auto;
+}
+@media (max-width: 600px) {
+    .box {
+        width: 200px;
+        height: 350px;
+    }
+    .info{
+        height: 18rem;
+    }
+    .location{
+        font-size: 2rem;
+    }
+    .temp{
+        font-size: 1rem;
+    }
+    .inputField{
+        font-size: 0.6rem;
+    }
+    .tempmin_max{
+        font-size: 0.5rem;
+    }
+    .weatArr{
+        font-size: 0.8rem;
+    }
+    .humid{
+        font-size: 0.5rem;
+    }
+    .errorMsg{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 220px) {
+    .box {
+        width: 130px;
+        height: 250px;
+    }
+    .info{
+        height: 12rem;
+    }
+    .location{
+        font-size: 1.2rem;
+    }
+    .temp{
+        font-size: 0.8rem;
+    }
+    .inputField{
+        font-size: 0.4rem;
+    }
+    .tempmin_max{
+        font-size: 0.3rem;
+    }
+    .weatArr{
+        font-size: 0.4rem;
+    }
+    .humid{
+        font-size: 0.3rem;
+    }
+    .errorMsg{
+        font-size: 0.6rem;
+    }
+}
